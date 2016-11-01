@@ -1,0 +1,37 @@
+#
+# DO NOT DELETE THESE LINES!
+#
+# Your subnet ID is:
+#
+#     subnet-3135ea1c
+#
+# Your security group ID is:
+#
+#     sg-57e40c2a
+#
+# Your AMI ID is:
+#
+#     aami-ami-mi-c9580bde
+#
+# Your Identity is:
+#
+#     datapipe-termite
+#
+
+provider "aws" {
+  access_key = "AKIAJNOUB4ZMMXAL3ZWA"
+  secret_key = "xAmJpw0bInCjz1oYqTu/XZsalANwJ9CT85xIRZA0"
+  region     = "us-east-1"
+}
+
+rousource "aws-instance" "web" {
+ami = "ami-"
+    instance_type = "t2.micro"
+    tags {
+        Name = "test1"
+    }
+}
+^x
+
+exit
+
