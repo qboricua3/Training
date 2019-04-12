@@ -19,7 +19,6 @@
 #     sg-57e40c2a
 
 #
-
 # Your AMI ID is:
 
 #
@@ -55,7 +54,7 @@ resource "aws_instance" "web" {
   instance_type          = "t2.micro"
   subnet_id              = "subnet-3135ea1c"
   vpc_security_group_ids = ["sg-57e40c2a"]
-  count                  = "2"
+  count                  = "1"
 
   tags {
     Identity = "Datapipe Teremite"
